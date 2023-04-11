@@ -1,2 +1,35 @@
-body
-    background-color: #555
+$navbar-color: #1c2736
+$section-color: #17202d
+$main-bg-color: #10171d
+$link-color: #309bee
+$secondary-color: #8897a4
+
+@import _mixin
+@include whnpx(450)
+@include whnpx(550)
+@include whnpx(100)
+@include sqnpx(50)
+@include create-background-color(twi, #{$navbar-color})
+@include create-background-color(twi-dark, #{$main-bg-color})
+@include create-background-color(twi-section, #{$section-color})
+
+$link-br-b: 3px
+
+html, body
+    height: 100%
+
+.nav-item
+    color: white
+    padding: calc(.5rem + #{$link-br-b}) 0 0 0
+    border-bottom: #{$link-br-b} solid transparent
+
+.nav-icon
+    width: 130px
+    font-size: 1.2rem
+    padding: .5rem 0 calc(.5rem - #{$link-br-b}) 0
+    text-align: center
+
+.nav-icon:hover
+    border-bottom: #{$link-br-b} solid #{$link-color}
+    i
+        color: #{$link-color}

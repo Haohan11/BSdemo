@@ -4,25 +4,85 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
-    <!-- Bootstrap CSS v5.3.1 -->
-    <!-- course link https://sagedaben.com/iSpan/bsm.html -->
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Mock Twitter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main>
-
+<body class="h-100 bg-twi-dark position-relative">
+    <nav class="navbar navbar-expand-lg bg-twi p-0 top-0 position-fixed w-100" data-bs-theme="dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                    <li class="nav-item nav-icon">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon">
+                        <a class="nav-link" href="#">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-icon me-4">
+                        <a class="nav-link" href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item w550px me-4">
+                        <input class="bg-twi-dark border-0 form-control rounded-5" type="search" placeholder="Search" aria-label="Search">
+                    </li>
+                    <li class="nav-item p-0 pt-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-user fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-auto me-1">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="bg-twi-section vh-100">
+                        <div class="container p-0">
+                            <div class="row g-0">
+                                <div class="col-1">
+                                    <div class="pt-3 text-center bg-light h550px">
+                                        <i class="fa-regular fa-circle-user fs-1"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="bg-secondary vh-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="bg-twi-section h-75"></div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html> 
+</html>
