@@ -73,13 +73,21 @@
   background-color: #17202d;
 }
 
+.twi-blue {
+  color: #309bee;
+}
+
+.twi-color {
+  color: #8897a4;
+}
+
 html, body {
   height: 100%;
 }
 
 .placeholder {
   display: block;
-  margin: 0.45rem;
+  margin: 0.45rem 0;
   border-radius: 2px;
 }
 
@@ -95,9 +103,13 @@ html, body {
 }
 
 .nav-item {
-  color: white;
   padding: calc(.5rem + 3px) 0 0 0;
   border-bottom: 3px solid transparent;
+}
+
+i {
+  color: #8897a4;
+  cursor: pointer;
 }
 
 .nav-icon {

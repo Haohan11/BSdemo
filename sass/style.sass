@@ -17,6 +17,8 @@ $secondary-color: #8897a4
 @include create-background-color(twi, #{$navbar-color})
 @include create-background-color(twi-dark, #{$main-bg-color})
 @include create-background-color(twi-section, #{$section-color})
+@include create-color(twi-blue, #{$link-color})
+@include create-color(twi-color, #{$secondary-color})
 
 $link-br-b: 3px
 
@@ -25,7 +27,7 @@ html, body
 
 .placeholder
     display: block
-    margin: .45rem
+    margin: .45rem 0
     border-radius: 2px
 
 .form-control
@@ -39,9 +41,13 @@ html, body
     align-items: center
 
 .nav-item
-    color: white
     padding: calc(.5rem + #{$link-br-b}) 0 0 0
     border-bottom: #{$link-br-b} solid transparent
+
+i
+    color: $secondary-color
+    cursor: pointer
+    
 
 .nav-icon
     width: 130px
