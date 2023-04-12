@@ -7,8 +7,13 @@ $secondary-color: #8897a4
 @import _mixin
 @include whnpx(450)
 @include whnpx(550)
+@include whnpx(300)
 @include whnpx(100)
+@include whnpx(45)
+@include whnpx(50)
+@include sqnpx(100)
 @include sqnpx(50)
+@include sqnpx(45)
 @include create-background-color(twi, #{$navbar-color})
 @include create-background-color(twi-dark, #{$main-bg-color})
 @include create-background-color(twi-section, #{$section-color})
@@ -17,6 +22,21 @@ $link-br-b: 3px
 
 html, body
     height: 100%
+
+.placeholder
+    display: block
+    margin: .45rem
+    border-radius: 2px
+
+.form-control
+    &:focus
+        box-shadow: none
+        background-color: #{$main-bg-color}
+
+.center-all
+    display: flex
+    justify-content: center
+    align-items: center
 
 .nav-item
     color: white
@@ -33,3 +53,9 @@ html, body
     border-bottom: #{$link-br-b} solid #{$link-color}
     i
         color: #{$link-color}
+
+.user-head
+    border-radius: 50%
+
+.post-img
+    opacity: 1

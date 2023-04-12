@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="h-100 bg-twi-dark position-relative">
+<body class="h-100 bg-twi-dark">
     <nav class="navbar navbar-expand-lg bg-twi p-0 top-0 position-fixed w-100" data-bs-theme="dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,7 +41,10 @@
                         </a>
                     </li>
                     <li class="nav-item w550px me-4">
-                        <input class="bg-twi-dark border-0 form-control rounded-5" type="search" placeholder="Search" aria-label="Search">
+                        <div class="d-flex">
+                            <i class="bg-twi-dark fa-solid fa-magnifying-glass rounded-start-5 ps-3 center-all"></i>
+                            <input class="bg-twi-dark border-0 form-control rounded-0 rounded-end-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
                     </li>
                     <li class="nav-item p-0 pt-2">
                         <a class="nav-link" href="#">
@@ -57,20 +60,29 @@
             </div>
         </div>
     </nav>
-    <main class="mt-5 pt-5">
-        <div class="container">
+    <main class="mt-5">
+        <div class="container placeholder-wave">
             <div class="row">
                 <div class="col-7">
-                    <div class="bg-twi-section vh-100">
-                        <div class="container p-0">
+                    <div class="bg-twi-section py-5 px-3 vh-100">
+                        <div class="container p-0 border-1 border-top border-bottom">
                             <div class="row g-0">
-                                <div class="col-1">
-                                    <div class="pt-3 text-center bg-light h550px">
-                                        <i class="fa-regular fa-circle-user fs-1"></i>
+                                <div class="col-1 pt-2">
+                                    <div class="user-head bg-light sq50px">
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="bg-secondary vh-100"></div>
+                                    <div id="user-info" class="mb-3">
+                                        <span class="placeholder placeholder-sm bg-light col-6"></span>
+                                        <span class="placeholder placeholder-sm bg-light col-4"></span>
+                                        <span class="placeholder placeholder-sm bg-light col-5"></span>
+                                    </div>
+                                    <div class="user-post">
+                                        <span class="placeholder placeholder-sm bg-light col-10"></span>
+                                        <span class="placeholder placeholder-sm bg-light col-8"></span>
+                                        <div class="placeholder post-img mt-3 rounded-4 bg-white col-11 h300px">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
