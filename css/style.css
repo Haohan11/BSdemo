@@ -73,6 +73,10 @@
   background-color: #17202d;
 }
 
+.bg-twi-blue {
+  background-color: #309bee;
+}
+
 .twi-blue {
   color: #309bee;
 }
@@ -85,7 +89,7 @@ html, body {
   height: 100%;
 }
 
-.placeholder {
+.placeholder, .placeholder-sm {
   display: block;
   margin: 0.45rem 0;
   border-radius: 2px;

@@ -17,6 +17,7 @@ $secondary-color: #8897a4
 @include create-background-color(twi, #{$navbar-color})
 @include create-background-color(twi-dark, #{$main-bg-color})
 @include create-background-color(twi-section, #{$section-color})
+@include create-background-color(twi-blue, #{$link-color})
 @include create-color(twi-blue, #{$link-color})
 @include create-color(twi-color, #{$secondary-color})
 
@@ -25,7 +26,7 @@ $link-br-b: 3px
 html, body
     height: 100%
 
-.placeholder
+.placeholder, .placeholder-sm
     display: block
     margin: .45rem 0
     border-radius: 2px
